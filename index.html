@@ -53,8 +53,8 @@
     <section class="site-header-menu">
       <div class="container site-header-menu-container">
 
-        <a class="top-logo" href="index.html">
-          <img class="top-logo-img" src="img/logo.svg" alt="Site logo" width="177" height="86">
+        <a class="logo" href="index.html">
+          <img class="logo-img" src="img/logo.svg" alt="Site logo" width="177" height="86">
         </a>
 
         <nav class="sitenav">
@@ -115,13 +115,112 @@
 
     <section class="our-services">
       <div class="container">
-        
+        <h2 class="our-services-heading">Наши услуги</h2>
+
+        <div class="our-services-box">
+          <ul class="services-list">
+            <li class="services-item">
+              <a class="services-link doctor" href="#">Первичный осмотр</a>
+            </li>
+            <li class="services-item">
+              <a class="services-link first-aid" href="#">Первичный осмотр</a>
+            </li>
+            <li class="services-item">
+              <a class="services-link medication" href="#">Хирургическое вмешательство</a>
+            </li>
+            <li class="services-item">
+              <a class="services-link dermotology" href="#">Дерматология</a>
+            </li>
+            <li class="services-item">
+              <a class="services-link mikroskop" href="#">Лабораторная диагностика</a>
+            </li>
+            <li class="services-item">
+              <a class="services-link dog-cat" href="#">Офтальмология</a>
+            </li>
+            <li class="services-item">
+              <a class="services-link services-link-close skilet" href="#">УЗИ диагностика</a>
+            </li>
+            <li class="services-item">
+              <a class="services-link services-link-close ukol" href="#">Чипирование</a>
+            </li>
+            <li class="services-item">
+              <a class="services-link services-link-close pet-calendar" href="#">Международные паспорта</a>
+            </li>
+            <li class="services-item">
+              <a class="services-link services-link-close medecine" href="#">Вакцинация</a>
+            </li>
+            <li class="services-item">
+              <a class="services-link services-link-close teeth" href="#">Стоматология</a>
+            </li>
+            <li class="services-item">
+              <a class="services-link services-link-close aid-box" href="#">Вызов на дом</a>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </section>
 
+    <section class="subscribe">
+      <div class="container">
+
+        <div class="subscribe-box">
+
+          <h2 class="subscribe-heading">Будь в курсе событий</h2>
+
+          <form class="subscribe-form" action="https://echo.htmlacdemy.ru" method="POST">
+
+              <input class="subscribe-input" type="email" name="email" aria-label="Write your email" placeholder="Укажите Ваш email адрес" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" minlength="5" maxlength="20" required>
+              <button class="subscribe-btn" type="submit">Подписаться</button>
+
+          </form>
+          <span class="dog-bg"></span>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="useful-articles"></section>
+
   </main>
 
-  <footer class="site-footer"></footer>
+  <footer class="site-footer">
+
+    <section class="site-footer">
+
+      <div class="container footer-container">
+
+        <a class="footer-logo" href="index.html">
+          <img class="logo-img" src="img/logo.svg" alt="Site logo" width="177" height="86">
+        </a>
+
+        <ul class="footer-menu-list">
+          <li class="footer-menu-list-item">
+            <a class="footer-menu-list-link" href="#">Главная</a>
+          </li>
+          <li class="footer-menu-list-item">
+            <a class="footer-menu-list-link" href="#">О Клинике</a>
+          </li>
+          <li class="footer-menu-list-item">
+            <a class="footer-menu-list-link" href="#">Наши Услуги</a>
+          </li>
+          <li class="footer-menu-list-item">
+            <a class="footer-menu-list-link" href="#">Полезные Статьи</a>
+          </li>
+          <li class="footer-menu-list-item">
+            <a class="footer-menu-list-link" href="#">FAQ</a>
+          </li>
+          <li class="footer-menu-list-item">
+            <a class="footer-menu-list-link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </section>
+
+  </footer>
 
 </body>
 </html>
