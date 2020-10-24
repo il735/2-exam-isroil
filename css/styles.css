@@ -1,0 +1,494 @@
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/subset-FuturaPT-Medium.woff2") format("woff2"),
+      url("../fonts/subset-FuturaPT-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT Book";
+  src: url("../fonts/subset-FuturaPT-Book.woff2") format("woff2"),
+      url("../fonts/subset-FuturaPT-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/subset-FuturaPT-Bold.woff2") format("woff2"),
+      url("../fonts/subset-FuturaPT-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Futura PT", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1350px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /* box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1); */
+}
+
+.site-header{
+  position: relative;
+  z-index: 1;
+}
+
+.site-header-contact{
+  background-color: #F9F8F8;
+  padding-top: 11px;
+  padding-bottom: 9px;
+}
+
+.contact-content{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding-left: 173px;
+}
+
+.contact-content-item{
+  font-weight: 500;
+  font-size: 14px;
+  color: #333333;
+}
+.address-item{
+  margin-right: 106px;
+}
+.phone-numbers-item{
+  margin-right: 120px;
+}
+
+.contact-content-address{
+  display: flex;
+  align-items: center;
+  font-style: normal;
+}
+
+.contact-content-address::before{
+  content: "";
+  width: 14px;
+  height: 13px;
+  background-image: url("../img/home-img.png");
+  background-size: 14px 13px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 9px;
+}
+
+.tel-number-item:not(:last-child){
+  margin-right: 9px;
+}
+
+.tel-numbers{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.tel-numbers-link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333333;
+}
+.tel-numbers-link:hover{
+  color: #FFBD54;
+}
+.tel-numbers-link:active{
+  color: #333333;
+  opacity: 0.6;
+}
+
+.number-1::before{
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-image: url("../img/tel.png");
+  background-size: 13px 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 9px;
+}
+
+.number-2-3::before{
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-image: url("../img/tochka.png");
+  background-size: 4px 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 9px;
+}
+
+.work-times{
+  display: flex;
+  align-items: center;
+}
+.work-times::before{
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/schedule.png");
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 7px;
+}
+
+.work-time:not(:last-child){
+  margin-right: 17px;
+}
+
+.site-header-menu{
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.site-header-menu-container{
+  display: flex;
+  align-items: center;
+}
+
+.top-logo{
+  position: absolute;
+  z-index: 1;
+  top: 21px;
+  left: 65px;
+  display: block;
+}
+
+.top-logo-img{
+  display: block;
+}
+.top-logo:hover{
+  opacity: 0.8;
+}
+.top-logo:active{
+  opacity: 0.6;
+}
+
+.sitenav{
+  display: flex;
+  align-items: center;
+  margin-left: 262px;
+}
+
+.sitenav-list{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-right: 200px;
+}
+
+.sitenav-list-item:not(:last-child){
+  margin-right: 55px;
+}
+
+.sitenav-list-link{
+  position: relative;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
+  text-decoration: none;
+}
+.sitenav-list-link::after{
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0.1%;
+  opacity: 0.3;
+  display: none;
+  background-color: yellow;
+}
+.sitenav-list-link:hover::after{
+  display: block;
+}
+.sitenav-list-link:active{
+  opacity: 0.6;
+}
+
+.sitenav-list-item-active{
+  display: flex;
+  align-items: center;
+}
+.sitenav-list-item-active::before{
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/fish.png");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 12px;
+}
+
+.give-questions{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
+}
+.give-questions::before{
+  content: "";
+  width: 23px;
+  height: 21px;
+  background-image: url("../img/lapa.png");
+  background-size: 23px 21px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.site-content{
+  background-color: #E5E5E5;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+}
+
+.hero{
+  padding-top: 145px;
+  padding-bottom: 290px;
+  background-image: url("../img/toti.png"),
+                   url("../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% + 100px) 400px, calc(0% - 220px) -85px;
+}
+
+.hero-box{
+  max-width: 608px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.hero-heading{
+  margin-top: 0;
+  margin-bottom: 29px;
+  max-width: 608px;
+  font-weight: bold;
+  font-size: 70px;
+  color: #333333;
+  line-height: 64px;
+}
+.hero-heading-span{
+  color: #78C0DE;
+}
+
+.hero-text{
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #949494;
+  margin-bottom: 38px;
+  max-width: 495px;
+}
+
+.hero-btn{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+  padding: 15px 48px 16px 47px;
+  background-color: #333333;
+  border-radius: 3px;
+}
+.hero-btn:hover{
+  background-color: #FFBD54;
+  color: #333333;
+}
+.hero-btn:active{
+  opacity: 0.6;
+}
+
+.about-clinic-container{
+  padding-bottom: 96px;
+}
+
+.about-clinic{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 753px;
+  text-align: center;
+}
+.about-clinic::before{
+  content: "";
+  width: 142px;
+  height: 128px;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  left: -100px;
+  top: 0;
+  background-image: url("../img/first“.png");
+  background-size: 50px 50px;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+.about-clinic::after{
+  content: "";
+  width: 142px;
+  height: 128px;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  right: -100px;
+  bottom: 85px;
+  background-image: url("../img/second“.png");
+  background-size: 50px 50px;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.about-clinic-heading{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #333333;
+  order: 1;
+  margin: 0;
+  margin-top: 35px;
+}
+
+.about-clinic-text{
+  position: relative;
+  z-index: 1;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  color: #949494;
+  margin: 0;
+  padding-top: 43px;
+  padding-bottom: 35px;
+}
+.about-clinic-text::before{
+  position: absolute;
+  z-index: 1;
+  content: "";
+  width: 140px;
+  height: 3px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #DBDBDB;
+}
+.about-clinic-text::after{
+  position: absolute;
+  z-index: 1;
+  content: "";
+  width: 140px;
+  height: 3px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #DBDBDB;
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+
+  .contact-content-address::before{
+    background-image: url("../img/home-img@2x.png");
+  }
+
+  .number-1::before{
+    background-image: url("../img/tel@2x.png");
+  }
+
+  .number-2-3::before{
+    background-image: url("../img/tochka@2x.png");
+  }
+
+  .sitenav-list-link-active::before{
+    background-image: url("../img/fish@2x.png");
+  }
+
+  .give-questions::before{
+    background-image: url("../img/lapa@2x.png");
+  }
+
+  .hero{
+    background-image: url("../img/toti@2x.png"),
+                       url("../img/hero-bg@2x.png");
+  }
+
+  .about-clinic::before{
+    background-image: url("../img/first“@2x.png");
+  }
+
+  .about-clinic::after{
+    background-image: url("../img/second“@2x.png");
+  }
+}
