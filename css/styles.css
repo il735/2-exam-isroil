@@ -385,7 +385,7 @@ img {
   display: block;
   left: -100px;
   top: 0;
-  background-image: url("../optimized-imgs/first“.png");
+  background-image: url("../optimized-imgs/first-quotes.png");
   background-size: 50px 50px;
   background-position: left top;
   background-repeat: no-repeat;
@@ -399,7 +399,7 @@ img {
   display: block;
   right: -100px;
   bottom: 85px;
-  background-image: url("../optimized-imgs/second“.png");
+  background-image: url("../optimized-imgs/second-quotes.png");
   background-size: 50px 50px;
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -787,11 +787,11 @@ only screen and (                min-resolution: 2dppx) {
   }
 
   .about-clinic::before{
-    background-image: url("../optimized-imgs/first“@2x.png");
+    background-image: url("../optimized-imgs/first-quotes@2x.png");
   }
 
   .about-clinic::after{
-    background-image: url("../optimized-imgs/second“@2x.png");
+    background-image: url("../optimized-imgs/second-quotes@2x.png");
   }
 
   .doctor::before{
